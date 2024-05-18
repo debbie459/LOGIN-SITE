@@ -1,0 +1,276 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #E9F8E5;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.box_one {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9F8E5;
+}
+
+#autumn_icon {
+    height: 350px;
+}
+
+.login_box {
+    width: 55%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCFEFF;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 10px;
+    padding-bottom: 70px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+#logo {
+    height: 30px;
+    width: 30px;
+}
+
+#climate_text {
+    margin-left: 8px;
+    font-size: 18px;
+}
+
+.image_container {
+    display: none; 
+}    
+
+#autumn_icon_mobile {
+    display: none;
+}
+
+.login {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#create_account_text {
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.form_body {
+    width: 100%;
+    margin-top: 5px;
+}
+
+label {
+    font-size: 15px;
+}
+
+.input-box  {
+    width: 100%;
+    position: relative;
+    
+}
+
+.icon {
+    position: absolute;
+    left: 10px;
+    margin-right: 10px;
+    top: 52%;
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px; 
+    opacity: 0.5;
+}
+
+
+.input-box input{
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 8px;
+    padding: 8px;
+    border: 1.5px solid gray;
+    padding-left: 35px;
+
+}
+
+
+.input-box input:focus {
+    outline: none;
+}
+
+.input-box.success input {
+    border: 2px solid green;
+}
+
+.input-box.error input {
+    border: 2px solid red;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #73895D;
+    color: white;
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
+.alternative_login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#or_text {
+    color: gray;
+    font-size: 15px;
+}
+
+.alternative_icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#google_icon, #facebook_icon, #apple_icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 25px;
+}
+
+#existing_account {
+    margin-top: 20px;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* code to make the site responsive (on devices with width less than 500px) */
+
+@media (max-width: 500px) {
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: whitesmoke;
+       
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box_one {
+        display: none; 
+    }
+
+    .image_container {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    #autumn_mobile_icon {
+        display: block; 
+        height: 250px;
+    }
+
+    .login_box {
+        width: 100%;
+        padding: 20px;
+        background-color: whitesmoke;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .top {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    #logo {
+        height: 15px;
+        width: 15px;
+    }
+
+    #climate_text {
+        margin-left: 5px;
+    }
+
+    .login {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #create_account_text {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .form_body {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .alternative_icons{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    #google_icon, #facebook_icon, #apple_icon {
+        height: 15px;
+        width: 15px;
+        margin-right: 15px;
+    }
+
+}

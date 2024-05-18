@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaveDclimate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box_one">
+            <img src="images/Autumn-amico 1.png" id="autumn_icon" alt="image">
+        </div>
+
+        <div class="login_box">
+            <div class="top">
+                <img src="images/green-leaf.png" alt="Logo" id="logo">
+                <h3 id="climate_text">SaveDclimate</h3>
+            </div>
+
+            <div class="image_container">
+                <img src="images/Autumn-amico 1.png" id="autumn_mobile_icon">
+            </div>
+
+            <div class="login">
+                <h4 id="create_account_text">Create account</h4>
+
+                <div class="form_body">
+                    <form id="form" >
+                        <div class="input-box">
+                            <label for="fullName">Full Name</label><br>
+                            <input type="text" placeholder="Enter Full Name" name="name" id="full_name"><br><br>
+                            <img src="images/name_icon.png" alt="Username Icon" class="icon">
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="email">Email</label><br>
+                            <input type="email" placeholder="Enter your email" name="email" id="email" required><br><br>
+                            <img src="images/email_icon.png" alt="email Icon" class="icon">
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="password">Password</label><br>
+                            <input type="password" placeholder="Enter your Password" name="password" id="password"><br><br>
+                            <img src="images/password_icon.png" alt="Password Icon" class="icon">
+                            <div class="error"></div>
+                        </div>
+
+                        <button type="submit" id="submit-button">Sign Up</button>
+                    </form>
+                    
+                    
+                </div>
+                <div class="alternative_login">
+                    <p id="or_text">- OR -</p>
+                    <div class="alternative_icons">
+                        <img src="images/google_icon.png" alt="Google icon" id="google_icon">
+                        <img src="images/facebook_icon.png" alt="Facebook icon" id="facebook_icon">
+                        <img src="images/apple-icon.png" alt="Apple icon" id="apple_icon">
+                    </div>
+                </div>
+                <p id="existing_account">Already have an account? <a href="#">Login</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
